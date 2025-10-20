@@ -2,19 +2,24 @@ package Base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod;
 
 public class Bases 
 {
 
 	WebDriver driver;
 	
-	@BeforeMethod()
-	public void before()
+		By email=By.id("email");
+		By pas=By.id("password");
+	
+		public Bases(WebDriver driver)
+		{
+			this.driver = driver;
+
+		}
+	public void login(String mail,String pswd)
 	{
-		By email=By.id("//*[@id=\"email\"]");
-		By pas=By.id("//*[@id=\"password\"]");
+		driver.findElement(email).sendKeys(mail);
+		driver.findElement(pas).sendKeys(pswd);
 	}
 	
 	
