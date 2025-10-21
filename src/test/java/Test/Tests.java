@@ -24,16 +24,18 @@ public class Tests
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 	}
 	
-	@Test()
-	public void test()
+	@Test(priority=1)
+	public void newusersignup()
 	{
 		//Bases b=new Bases(driver);
 	//	b.login("Ichyan", "Aleena");
 		Registration r=new Registration(driver);
-		r.Registration("Anu", "anu@gmail.com");
+		r.Registration("Anu", "anuq@gmail.com","74BELqibHi@dGt6");
 		
 	}
-	
-	
-	
+	@Test(priority=2)
+	public void accountinfo()
+	{
+		
+	}
 }
