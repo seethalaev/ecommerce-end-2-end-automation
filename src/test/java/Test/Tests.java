@@ -32,6 +32,7 @@ public class Tests
 		r.Regitration("Anu", "anuq@gmail.com");
 		accountInfo a=new accountInfo(driver);
 		a.accountdetails("74BELqibHi@dGt6","24","July" ,"2020");
+		a.addressinfo("anna","pk","kgf company","cyberpark","infopark","India","Kerala","Kozhikkode","987678","987654321");
 		
 	}
 	
