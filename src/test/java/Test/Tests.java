@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import Base.Bases;
 import Base.Registration;
+import Base.accountInfo;
 
 public class Tests 
 {
@@ -27,10 +28,10 @@ public class Tests
 	@Test(priority=1)
 	public void newusersignup()
 	{
-		//Bases b=new Bases(driver);
-	//	b.login("Ichyan", "Aleena");
 		Registration r=new Registration(driver);
-		r.Registration("Anu", "anuq@gmail.com","74BELqibHi@dGt6");
+		r.Regitration("Anu", "anuq@gmail.com");
+		accountInfo a=new accountInfo(driver);
+		a.accountdetails("74BELqibHi@dGt6","24","July" ,"2020");
 		
 	}
 	@Test(priority=2)
