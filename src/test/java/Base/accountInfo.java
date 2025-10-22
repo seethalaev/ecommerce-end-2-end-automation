@@ -12,8 +12,8 @@ public class accountInfo {
 	
 	By day=By.xpath("//*[@id=\"days\"]");
 	By month=By.xpath("//*[@id=\"months\"]");
-	By year=By.xpath("//*[@id=\"months\"]");
-	
+	By year=By.xpath("//*[@id=\"years\"]");
+	By newsletter=By.xpath("//*[@id=\"newsletter\"]");
 	public accountInfo(WebDriver driver)
 	{
 		this.driver=driver;
@@ -33,6 +33,8 @@ public class accountInfo {
 		
 		Select yearselect=new Select(driver.findElement(year));
 		yearselect.selectByValue(yearelement);
+		
+		driver.findElement(newsletter).click();
 	
 	}
 }

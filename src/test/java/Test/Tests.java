@@ -34,9 +34,5 @@ public class Tests
 		a.accountdetails("74BELqibHi@dGt6","24","July" ,"2020");
 		
 	}
-	@Test(priority=2)
-	public void accountinfo()
-	{
-		
-	}
+	
 }
