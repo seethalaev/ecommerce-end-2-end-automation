@@ -32,6 +32,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         wait.until(ExpectedConditions.elementToBeClickable(login)).click();
         wait.until(ExpectedConditions.elementToBeClickable(logout)).click();
         String actual=driver.getTitle();
+        System.out.println("titale"+actual);
         if(actual.equalsIgnoreCase("https://automationexercise.com/"))
         {
         	System.out.println("passed");
@@ -50,6 +51,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         wait.until(ExpectedConditions.visibilityOfElementLocated(pas)).sendKeys(paswd);
         wait.until(ExpectedConditions.elementToBeClickable(login)).click();
         String actual=driver.getCurrentUrl();
+        System.out.println(actual+"url");
         if(actual.equalsIgnoreCase("https://automationexercise.com/"))
         {
         	System.out.println("passed");
