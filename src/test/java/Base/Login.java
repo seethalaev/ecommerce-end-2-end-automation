@@ -32,13 +32,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         wait.until(ExpectedConditions.elementToBeClickable(login)).click();
         wait.until(ExpectedConditions.elementToBeClickable(logout)).click();
         String actual=driver.getTitle();
-        if(actual.equalsIgnoreCase("automationexercise.com"))
+        if(actual.equalsIgnoreCase("https://automationexercise.com/"))
         {
         	System.out.println("passed");
         }
         else
         {
         	System.out.println("not passed");
+        	driver.findElement(email).clear();
+        	driver.findElement(pas).clear();
         }
 	
 	}
@@ -47,14 +49,36 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		wait.until(ExpectedConditions.visibilityOfElementLocated(email)).sendKeys(mil);
         wait.until(ExpectedConditions.visibilityOfElementLocated(pas)).sendKeys(paswd);
         wait.until(ExpectedConditions.elementToBeClickable(login)).click();
-        String actual=driver.getTitle();
-        if(actual.equalsIgnoreCase("automationexercise.com"))
+        String actual=driver.getCurrentUrl();
+        if(actual.equalsIgnoreCase("https://automationexercise.com/"))
         {
         	System.out.println("passed");
         }
         else
         {
         	System.out.println("not passed");
+        	driver.findElement(email).clear();
+        	driver.findElement(pas).clear();
+    
         }
-	}
+ 	}
+        public void UnameInpass(String maail,String paswd)
+        {
+        	wait.until(ExpectedConditions.visibilityOfElementLocated(email)).sendKeys(maail);
+        	wait.until(ExpectedConditions.visibilityOfElementLocated(pas)).sendKeys(paswd);
+        	wait.until(ExpectedConditions.elementToBeClickable(login)).click();
+        	 String actual=driver.getCurrentUrl();
+             if(actual.equalsIgnoreCase("https://automationexercise.com/"))
+             {
+             	System.out.println("passed");
+             }
+             else
+             {
+             	System.out.println("not passed");
+            	driver.findElement(email).clear();
+            	driver.findElement(pas).clear();
+        
+             }
+        }
+	
 }
