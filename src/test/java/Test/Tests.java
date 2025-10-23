@@ -9,13 +9,15 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Base.Bases;
+
+import Base.Login;
 import Base.Registration;
 import Base.accountInfo;
 
 public class Tests 
 {
 	WebDriver driver;
+	
 	@BeforeMethod()
 	public void before()
 	{
@@ -33,7 +35,18 @@ public class Tests
 		accountInfo a=new accountInfo(driver);
 		a.accountdetails("74BELqibHi@dGt6","24","July" ,"2020");
 		a.addressinfo("anna","pk","kgf company","cyberpark","infopark","India","Kerala","Kozhikkode","987678","987654321");
+		Login l=new Login(driver);
+		l.login("anuq@gmail.com", "74BELqibHi@dGt6");
+		l.InUnamepass("invaliduser@gmail.com","74BELqibHi@dGt6");
 		
+		
+		//l.login("annaaa","74BELqibHi@dGt6");invaliduser@gmail.com", "wrongPassword
 	}
+//	@AfterMethod()
+//	public void after()
+//	{
+//		driver.close();
+//	}
+	
 	
 }

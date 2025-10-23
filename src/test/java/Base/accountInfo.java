@@ -4,9 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class accountInfo {
+public class accountInfo 
+{
 
 	WebDriver driver;
+	
 	By title=By.xpath("//*[@id=\"id_gender2\"]");
 	By pswd=By.xpath("//*[@id=\"password\"]");
 	
@@ -26,7 +28,9 @@ public class accountInfo {
     By zip=By.xpath("//*[@id=\"zipcode\"]");
     By mobile=By.xpath("//*[@id=\"mobile_number\"]");
     By login=By.xpath("//*[@id=\"form\"]/div/div/div/div[1]/form/button");
-			
+	By conti=By.xpath("//*[@id=\"form\"]/div/div/div/div/a");
+    By logout=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
+    
 	public accountInfo(WebDriver driver)
 	{
 		this.driver=driver;
@@ -48,6 +52,7 @@ public class accountInfo {
 		yearselect.selectByValue(yearelement);
 		
 		driver.findElement(newsletter).click();
+		
 	
 	}
 	public void addressinfo(String frname,String lsname,String com,String adr,String adr2,String county,String ste,String cit,String zipcod,String mob)
@@ -65,6 +70,9 @@ public class accountInfo {
 		driver.findElement(zip).sendKeys(String.valueOf(zipcod));
 		driver.findElement(mobile).sendKeys(String.valueOf(mob));
 		driver.findElement(login).click();
+		driver.findElement(conti).click();
+		driver.findElement(logout).click();
+		System.out.println(driver.getTitle());
 
 		
 	}
