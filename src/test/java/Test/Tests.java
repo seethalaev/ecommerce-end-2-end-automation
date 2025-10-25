@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-
+import Base.Delete;
 import Base.Login;
 import Base.Registration;
 import Base.accountInfo;
@@ -38,7 +38,10 @@ public class Tests
 		Login l=new Login(driver);
 		l.login("anuq@gmail.com", "74BELqibHi@dGt6");
 		l.InUnamepass("invaliduser@gmail.com","74BELqibHi@dGt6");
-		l.UnameInpass("anna","invalidpassword");
+	//	l.UnameInpass("anna","invalidpassword");
+		Delete d=new Delete(driver);
+		d.delt();
+		
 		
 		
 		//l.login("annaaa","74BELqibHi@dGt6");invaliduser@gmail.com", "wrongPassword
