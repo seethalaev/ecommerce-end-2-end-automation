@@ -3,6 +3,7 @@ package Test;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
@@ -17,6 +18,7 @@ import Base.Contactus;
 import Base.Delete;
 import Base.Login;
 import Base.Registration;
+import Base.Screenshot;
 import Base.accountInfo;
 
 public class Tests 
@@ -33,7 +35,7 @@ public class Tests
 	}
 	
 	@Test(priority=1)
-	public void newusersignup() throws AWTException
+	public void newusersignup() throws AWTException, IOException
 	{
 		Registration r=new Registration(driver);
 		r.Regitration("Anu", "anuq@gmail.com");
@@ -49,12 +51,12 @@ public class Tests
 		Delete d=new Delete(driver);
 		d.delt();
 		
-	
 		Contactus c=new Contactus(driver);
 		c.contact("Anu", "anuq@gmail.com", "resume", "hi hope you fine");
 		c.allert();
 		
-		
+		Screenshot sr=new Screenshot(driver);
+		sr.scr();
 	}	
 	}
 //	@AfterMethod()
