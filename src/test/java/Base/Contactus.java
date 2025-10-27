@@ -6,6 +6,7 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -35,9 +36,16 @@ public class Contactus {
 		driver.findElement(choosefile).sendKeys("D:\\picturess\\Pictures\\amazon");
 		driver.findElement(subit).click();
 	 	
-	
-		
 	}
+
+	public void allert()
+	{
+		Alert aler=driver.switchTo().alert();
+		aler.accept();
+		aler.getText();
+		System.out.println(aler.getText());
+	}
+	
 
 //	private void uploadfile(String string) throws AWTException {
 //		// TODO Auto-generated method stub
