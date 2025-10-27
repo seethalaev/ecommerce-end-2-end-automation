@@ -49,6 +49,8 @@ public class Tests
 		d.delt();
 		
 	//	l.login("anuq@gmail.com", "74BELqibHi@dGt6");
+		Contactus c=new Contactus(driver);
+		c.contact("Anu", "anuq@gmail.com", "resume", "hi hope ou fine");
 		
 	}	
 	}
