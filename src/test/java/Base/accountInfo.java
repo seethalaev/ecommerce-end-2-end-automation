@@ -1,7 +1,10 @@
 package Base;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class accountInfo 
@@ -43,6 +46,9 @@ public class accountInfo
 		
 		Select dayselect=new Select(driver.findElement(day));
 		dayselect.selectByValue(dayvalue);
+		List<WebElement> daycount = dayselect.getOptions();
+		System.out.println("daycount is" +daycount);
+		
 		
 		Select monthselect=new Select(driver.findElement(month));
 		monthselect.selectByVisibleText(monthvalue);

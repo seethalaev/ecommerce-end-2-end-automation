@@ -41,9 +41,8 @@ public class Contactus {
 	public void allert()
 	{
 		Alert aler=driver.switchTo().alert();
-		aler.accept();
-		aler.getText();
 		System.out.println(aler.getText());
+		aler.accept();
 	}
 	
 
