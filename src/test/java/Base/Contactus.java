@@ -18,7 +18,7 @@ public class Contactus {
 	By sub=By.xpath("//*[@id=\"contact-us-form\"]/div[3]/input");
 	By message=By.xpath("//*[@id=\"message\"]");
 	By choosefile=By.name("upload_file");
-	By submit=By.xpath("//*[@id=\"contact-us-form\"]/div[6]/input");
+	By subit=By.name("submit");
 	
 	public Contactus(WebDriver driver)
 	{
@@ -32,11 +32,11 @@ public class Contactus {
 		driver.findElement(email).sendKeys(emil);
 		driver.findElement(sub).sendKeys(subjct);
 		driver.findElement(message).sendKeys(msg);
-		driver.findElement(choosefile).click();
-		uploadfile("D:\\picturess\\Pictures\\amazon");
-		driver.findElement(submit).click();
+		driver.findElement(choosefile).sendKeys("D:\\picturess\\Pictures\\amazon");
+		//uploadfile("D:\\picturess\\Pictures\\amazon");
+		driver.findElement(subit).click();
 	 	
-		
+	
 		
 	}
 
