@@ -1,5 +1,9 @@
 package Base;
 
-public class Screenshot {
+import org.openqa.selenium.WebDriver;
 
+public class Screenshot 
+{
+	WebDriver driver;
+	
 }

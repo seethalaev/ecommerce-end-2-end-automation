@@ -42,13 +42,16 @@ public class accountInfo
 	public void accountdetails(String pswrd,String dayvalue,String monthvalue,String yearelement)
 	{
 		driver.findElement(title).click();
+		
 		driver.findElement(pswd).sendKeys(pswrd);
 		
 		Select dayselect=new Select(driver.findElement(day));
 		dayselect.selectByValue(dayvalue);
 		List<WebElement> daycount = dayselect.getOptions();
-		System.out.println("daycount is" +daycount);
+		System.out.println("daycount is" +daycount.size());
 		
+		boolean b1=driver.findElement(title).isSelected();
+		System.out.println(b1);
 		
 		Select monthselect=new Select(driver.findElement(month));
 		monthselect.selectByVisibleText(monthvalue);
