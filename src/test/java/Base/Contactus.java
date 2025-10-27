@@ -33,25 +33,24 @@ public class Contactus {
 		driver.findElement(sub).sendKeys(subjct);
 		driver.findElement(message).sendKeys(msg);
 		driver.findElement(choosefile).sendKeys("D:\\picturess\\Pictures\\amazon");
-		//uploadfile("D:\\picturess\\Pictures\\amazon");
 		driver.findElement(subit).click();
 	 	
 	
 		
 	}
 
-	private void uploadfile(String string) throws AWTException {
-		// TODO Auto-generated method stub
-		 StringSelection str=new StringSelection("D:\\picturess\\Pictures\\amazon");
-			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-			Robot robot=new Robot();
-			robot.delay(3000);
-			
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-	}
+//	private void uploadfile(String string) throws AWTException {
+//		// TODO Auto-generated method stub
+//		 StringSelection str=new StringSelection("D:\\picturess\\Pictures\\amazon");
+//			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+//			Robot robot=new Robot();
+//			robot.delay(3000);
+//			
+//			robot.keyPress(KeyEvent.VK_CONTROL);
+//			robot.keyPress(KeyEvent.VK_V);
+//			robot.keyRelease(KeyEvent.VK_V);
+//			robot.keyRelease(KeyEvent.VK_CONTROL);
+//			robot.keyPress(KeyEvent.VK_ENTER);
+//			robot.keyRelease(KeyEvent.VK_CONTROL);
+//	}
 }
