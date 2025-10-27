@@ -40,5 +40,13 @@ public class Contactus {
 		
 	}
 
-	
+	private void uploadfile(String string) throws AWTException {
+		// TODO Auto-generated method stub
+		 StringSelection str=new StringSelection("D:\\picturess\\Pictures\\amazon");
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+			Robot robot=new Robot();
+			robot.delay(3000);
+			
+			
+	}
 }
