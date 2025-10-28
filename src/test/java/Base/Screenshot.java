@@ -30,5 +30,7 @@ public class Screenshot
 		FileHandler.copy(sreen, dest);
 		driver.navigate().back();
 		driver.navigate().refresh();
+		driver.navigate().to("https://automationexercise.com/");
+
 			}
 }
