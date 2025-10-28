@@ -26,10 +26,8 @@ public class Screenshot
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,1000)","");
 		File sreen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File("D://Eu.png");
+		File dest=new File("D://E4u.png");
 		FileHandler.copy(sreen, dest);
-		driver.navigate().back();
-		driver.navigate().refresh();
-		driver.navigate().to("https://automationexercise.com/");
+		
 	}
 }

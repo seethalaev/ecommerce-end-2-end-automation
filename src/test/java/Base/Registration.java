@@ -1,5 +1,7 @@
 package Base;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -21,6 +23,7 @@ public class Registration
 		driver.findElement(name).sendKeys(nam);
 		driver.findElement(email).sendKeys(mail);
 		driver.findElement(signup).click();
+	
 		
 
 	}
