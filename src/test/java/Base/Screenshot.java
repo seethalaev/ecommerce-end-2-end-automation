@@ -29,5 +29,6 @@ public class Screenshot
 		File dest=new File("D://E4u.png");
 		FileHandler.copy(sreen, dest);
 		driver.navigate().back();
+		driver.navigate().refresh();
 			}
 }
