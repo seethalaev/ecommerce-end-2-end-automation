@@ -28,6 +28,6 @@ public class Screenshot
 		File sreen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File dest=new File("D://E4u.png");
 		FileHandler.copy(sreen, dest);
-		
-	}
+		driver.navigate().back();
+			}
 }
