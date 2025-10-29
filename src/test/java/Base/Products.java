@@ -20,6 +20,9 @@ public class Products
 	By procheckout=By.xpath("//*[@id=\"do_action\"]/div[1]/div/div/a");
 	By concart=By.xpath("//*[@id=\"checkoutModal\"]/div/div/div[3]/button");
 	By login=By.xpath("//*[@id=\"checkoutModal\"]/div/div/div[2]/p[2]/a/u");
+	public Products(WebDriver driver)
+	{
+		this.driver=driver;	
+	}
 	
-			}
 }
