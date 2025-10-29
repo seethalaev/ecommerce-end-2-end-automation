@@ -30,7 +30,17 @@ public class Products
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,500)","");
-		
+		driver.findElement(target).click();
+		driver.findElement(cont).click();
+		driver.findElement(view).click();
+		driver.findElement(arrowmark);
+		driver.findElement(addcart).click();
+		driver.findElement(viewc).click();
+		driver.findElement(itemdeselect).click();
+		driver.findElement(procheckout).click();
+		driver.findElement(concart).click();
+		driver.findElement(procheckout).click();
+		driver.findElement(login).click();
 		
 			}
 	
