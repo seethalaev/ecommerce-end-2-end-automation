@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 import Base.Contactus;
 import Base.Delete;
 import Base.Login;
+import Base.Products;
 import Base.Registration;
 import Base.Screenshot;
 import Base.accountInfo;
@@ -57,6 +58,11 @@ public class Tests
 		
 		Screenshot sr=new Screenshot(driver);
 		sr.scr();
+		
+		Products p=new Products(driver);
+		p.acton();
+		l.login("anuq@gmail.com","74BELqibHi@dGt6");	
+		
 	}	
 	}
 //	@AfterMethod()

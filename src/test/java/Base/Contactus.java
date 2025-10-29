@@ -5,6 +5,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -35,7 +36,6 @@ public class Contactus {
 		driver.findElement(message).sendKeys(msg);
 		driver.findElement(choosefile).sendKeys("D:\\picturess\\Pictures\\amazon");
 		driver.findElement(subit).click();
-	 	
 	}
 
 	public void allert()
@@ -43,6 +43,8 @@ public class Contactus {
 		Alert aler=driver.switchTo().alert();
 		System.out.println(aler.getText());
 		aler.accept();
+		
+		
 	}
 	
 
