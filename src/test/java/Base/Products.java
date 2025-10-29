@@ -24,5 +24,14 @@ public class Products
 	{
 		this.driver=driver;	
 	}
+	public void acton()
+	{
+		driver.findElement(product).click();
+		
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,500)","");
+		
+		
+			}
 	
 }
