@@ -20,27 +20,6 @@ public class Products
 	By procheckout=By.xpath("//*[@id=\"do_action\"]/div[1]/div/div/a");
 	By concart=By.xpath("//*[@id=\"checkoutModal\"]/div/div/div[3]/button");
 	By login=By.xpath("//*[@id=\"checkoutModal\"]/div/div/div[2]/p[2]/a/u");
-	public Products(WebDriver driver)
-	{
-		this.driver=driver;	
-	}
-	public void acton()
-	{
-		driver.findElement(product).click();
-		
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,500)","");
-		
-		driver.findElement(target).click();
-		driver.findElement(cont).click();
-		driver.findElement(view).click();
-		driver.findElement(arrowmark);
-		driver.findElement(addcart).click();
-		driver.findElement(viewc).click();
-		driver.findElement(itemdeselect).click();
-		driver.findElement(procheckout).click();
-		driver.findElement(concart).click();
-		driver.findElement(procheckout).click();
-		driver.findElement(login).click();
+	
 			}
 }
