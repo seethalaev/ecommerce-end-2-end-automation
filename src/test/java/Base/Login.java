@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 		WebDriver driver;
 		WebDriverWait wait;
-		By email=By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/input[2]");
+		By email=By.xpath("/html/body/section/div/div/div[1]/div/form/input[2]");
 		By pas=By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/input[3]");
 		By login=By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/button");
 	    By logout=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
@@ -34,7 +34,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		}
 		else
 		{
-			System.out.println("content not presetnt");
+			System.out.println("content not present");
 		}
 		wait.until(ExpectedConditions.visibilityOfElementLocated(email)).sendKeys(mail);
         wait.until(ExpectedConditions.visibilityOfElementLocated(pas)).sendKeys(pswd);
