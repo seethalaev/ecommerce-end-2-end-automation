@@ -1,9 +1,15 @@
 package Base;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,7 +31,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 			wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 
 		}
-	public void login(String mail,String pswd)
+	public void login(String mail,String pswd) throws IOException
 	{
 		String actuapgsrc=driver.getPageSource();
 		if(actuapgsrc.contains(" Video Tutorials"))
@@ -40,20 +46,48 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         wait.until(ExpectedConditions.visibilityOfElementLocated(pas)).sendKeys(pswd);
         wait.until(ExpectedConditions.elementToBeClickable(login)).click();
         wait.until(ExpectedConditions.elementToBeClickable(logout)).click();
+        String base=driver.getCurrentUrl();
         String actual=driver.getTitle();
-        System.out.println("titale"+actual);
+        System.out.println("title "+actual);
+       
         if(actual.equalsIgnoreCase("https://automationexercise.com/"))
         {
-        	System.out.println("passed");
+        	System.out.println("title is same");
         }
         else
         {
-        	System.out.println("not passed");
+        	System.out.println("title is not same");
         	driver.findElement(email).clear();
         	driver.findElement(pas).clear();
         }
-	
+        
+        
+		URL ob=new URL(base);
+		HttpURLConnection con =(HttpURLConnection)ob.openConnection();
+		int responsecode=con.getResponseCode();
+		System.out.println("responsecode "+responsecode);
+		con.connect();
+		if(con.getResponseCode()==200)
+		{
+			System.out.println("valid response code");
+		}
+		else
+		{
+			System.out.println("invalid response code");
+		}
 	}
+	public void linkcount()
+	{
+		List<WebElement> li = driver.findElements(By.tagName("a"));
+		for(WebElement s:li)
+		{
+			String link=s.getAttribute("href");
+			System.out.println("link "+link);
+		}
+	}
+	
+		
+	
 	public void InUnamepass(String mil,String paswd)
  	{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(email)).sendKeys(mil);
@@ -63,11 +97,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         System.out.println(actual+"url");
         if(actual.equalsIgnoreCase("https://automationexercise.com/"))
         {
-        	System.out.println("passed");
+        	System.out.println("title is same");
         }
         else
         {
-        	System.out.println("not passed");
+        	System.out.println("title is not same");
         	driver.findElement(email).clear();
         	driver.findElement(pas).clear();
     
@@ -81,11 +115,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         	 String actual=driver.getCurrentUrl();
              if(actual.equalsIgnoreCase("https://automationexercise.com/"))
              {
-             	System.out.println("passed");
+             	System.out.println("title is same");
              }
              else
              {
-             	System.out.println("not passed");
+             	System.out.println("title is not same");
             	driver.findElement(email).clear();
             	driver.findElement(pas).clear();
         

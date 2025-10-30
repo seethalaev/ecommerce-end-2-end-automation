@@ -46,6 +46,7 @@ public class Tests
 		
 		Login l=new Login(driver);
 		l.login("anuq@gmail.com", "74BELqibHi@dGt6");
+		l.linkcount();
 		l.InUnamepass("invaliduser@gmail.com","74BELqibHi@dGt6");
 		l.UnameInpass("anna","invalidpassword");
 		
