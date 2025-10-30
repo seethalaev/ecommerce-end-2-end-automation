@@ -27,6 +27,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		}
 	public void login(String mail,String pswd)
 	{
+		String actuapgsrc=driver.getPageSource();
+		if(actuapgsrc.contains(" Video Tutorials"))
+		{
+			System.out.println("video editor is in as content");
+		}
+		else
+		{
+			System.out.println("content not presetnt");
+		}
 		wait.until(ExpectedConditions.visibilityOfElementLocated(email)).sendKeys(mail);
         wait.until(ExpectedConditions.visibilityOfElementLocated(pas)).sendKeys(pswd);
         wait.until(ExpectedConditions.elementToBeClickable(login)).click();
