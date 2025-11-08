@@ -33,5 +33,8 @@ public class Products
 	By down=By.xpath("//*[@id=\"form\"]/div/div/div/a");
 	By con=By.xpath("//*[@id=\"form\"]/div/div/div/div/a");
 	
-	
+	public Products(WebDriver driver)
+	{
+		this.driver=driver;	
+	}
 	
