@@ -12,3 +12,8 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshot 
 {
+	WebDriver driver;
+	By testcas=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
+	By img=By.xpath("//*[@id=\"header\"]/div/div/div/div[1]/div/a/img");
+	
+	
