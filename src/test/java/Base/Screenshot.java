@@ -33,3 +33,15 @@ public class Screenshot
 		driver.navigate().refresh();
 		driver.navigate().to("https://automationexercise.com/");
 		
+		Boolean imag=driver.findElement(img).isDisplayed();
+		if(imag)
+		{
+			System.out.println("image displayed");
+		}
+		else
+		{
+			System.out.println("image not displayed");
+		}
+
+			}
+}
