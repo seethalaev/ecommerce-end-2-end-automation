@@ -12,5 +12,11 @@ public class Delete
 	WebDriver driver;
 	By delete=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a/i");
 	
+	public Delete(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+
 
 
