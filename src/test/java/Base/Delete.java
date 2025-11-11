@@ -16,7 +16,12 @@ public class Delete
 	{
 		this.driver=driver;
 	}
-	
+	public void delt()
+	{
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	        wait.until(ExpectedConditions.elementToBeClickable(delete)).click();
+	  
+	    
 
 
 
