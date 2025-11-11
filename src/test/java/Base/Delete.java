@@ -20,8 +20,11 @@ public class Delete
 	{
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	        wait.until(ExpectedConditions.elementToBeClickable(delete)).click();
-	  
+	        String url = driver.getCurrentUrl();
+	        System.out.println("After delete, current URL: " + url);
+	    }
+	}
+	
 	    
-
 
 
