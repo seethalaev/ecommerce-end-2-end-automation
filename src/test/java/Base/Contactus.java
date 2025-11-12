@@ -27,3 +27,15 @@ public class Contactus {
 		this.driver=driver;
 	}
 	
+	public void contact(String nam,String emil,String subjct,String msg) throws AWTException
+	{
+		driver.findElement(contactus).click();
+		driver.findElement(name).sendKeys(nam);
+		driver.findElement(email).sendKeys(emil);
+		driver.findElement(sub).sendKeys(subjct);
+		driver.findElement(message).sendKeys(msg);
+		driver.findElement(choosefile).sendKeys("D:\\picturess\\Pictures\\amazon");
+		driver.findElement(subit).click();
+	}
+
+	
