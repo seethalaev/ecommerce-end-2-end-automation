@@ -22,5 +22,8 @@ public class Contactus {
 	By choosefile=By.name("upload_file");
 	By subit=By.name("submit");
 	By msg=By.xpath("//*[@id=\"contact-page\"]/div[2]/div[1]/div/div[2]");
-	
+	public Contactus(WebDriver driver)
+	{
+		this.driver=driver;
+	}
 	
