@@ -38,4 +38,31 @@ public class Contactus {
 		driver.findElement(subit).click();
 	}
 
+	public void allert()
+	{
+		Alert aler=driver.switchTo().alert();
+		System.out.println(aler.getText());
+		aler.accept();
+		
+		
+		System.out.println(driver.findElement(msg).getText());
+		
+		
+	}
 	
+
+//	private void uploadfile(String string) throws AWTException {
+//		// TODO Auto-generated method stub
+//		 StringSelection str=new StringSelection("D:\\picturess\\Pictures\\amazon");
+//			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+//			Robot robot=new Robot();
+//			robot.delay(3000);
+//			
+//			robot.keyPress(KeyEvent.VK_CONTROL);
+//			robot.keyPress(KeyEvent.VK_V);
+//			robot.keyRelease(KeyEvent.VK_V);
+//			robot.keyRelease(KeyEvent.VK_CONTROL);
+//			robot.keyPress(KeyEvent.VK_ENTER);
+//			robot.keyRelease(KeyEvent.VK_CONTROL);
+//	}
+}
