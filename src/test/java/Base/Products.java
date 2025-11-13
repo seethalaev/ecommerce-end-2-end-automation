@@ -37,4 +37,10 @@ public class Products
 	{
 		this.driver=driver;	
 	}
-	
+	public void acton(String name,String cardno,String cvno,String expir,String expyear)
+	{
+		driver.findElement(product).click();
+		
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,500)","");
+		
