@@ -20,4 +20,17 @@ public class Screenshot
 	{
 		this.driver=driver;
 	}
-	
+	public void scr() throws IOException
+	{
+		driver.findElement(testcas).click();
+		
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,1000)","");
+		File sreen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File dest=new File("D://E54u.png");
+		FileHandler.copy(sreen, dest);
+		driver.navigate().back();
+		driver.navigate().refresh();
+		driver.navigate().to("https://automationexercise.com/");
+		
+		
