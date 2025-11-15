@@ -18,4 +18,14 @@ public class Registration
 	{
 		this.driver=driver;
 	}
+	public void Regitration(String nam,String mail)
+	{
+		driver.findElement(name).sendKeys(nam);
+		driver.findElement(email).sendKeys(mail);
+		driver.findElement(signup).click();
 	
+		
+
+	}
+	
+}
