@@ -14,4 +14,8 @@ public class Registration
 	By email=By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]");
 	By signup=By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button");
 	
+	public Registration(WebDriver driver)
+	{
+		this.driver=driver;
+	}
 	
