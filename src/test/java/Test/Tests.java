@@ -1,0 +1,29 @@
+package Test;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import Base.Contactus;
+import Base.Delete;
+import Base.Login;
+import Base.Products;
+import Base.Registration;
+import Base.Screenshot;
+import Base.accountInfo;
+
+public class Tests 
+{
+	WebDriver driver;
+	
+	
