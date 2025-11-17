@@ -63,4 +63,16 @@ public class Tests
 		l.login("anuq@gmail.com","74BELqibHi@dGt6");	
 		
 		
+		Delete d=new Delete(driver);
+		d.delt();
 		
+	}	
+	}
+//	@AfterMethod()
+//	public void after()
+//	{
+//		driver.close();
+//	}
+	
+	
+
