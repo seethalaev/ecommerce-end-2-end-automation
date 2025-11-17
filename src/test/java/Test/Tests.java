@@ -26,4 +26,13 @@ public class Tests
 {
 	WebDriver driver;
 	
+	@BeforeMethod()
+	public void before()
+	{
+		driver=new ChromeDriver();
+		driver.get("https://automationexercise.com/login");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	}
+	
 	
