@@ -23,6 +23,7 @@ public class Delete
 	        String url = driver.getCurrentUrl();
 	        System.out.println("After delete, current URL: " + url);
 	    }
+	
 	}
 	
 	    
