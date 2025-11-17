@@ -35,4 +35,13 @@ public class Tests
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
-	
+	@Test(priority=1)
+	public void newusersignup() throws AWTException, IOException
+	{
+		Registration r=new Registration(driver);
+		r.Regitration("Anu", "anuq@gmail.com");
+		accountInfo a=new accountInfo(driver);
+		a.accountdetails("74BELqibHi@dGt6","24","July" ,"2020");
+		a.addressinfo("anna","pk","kgf company","cyberpark","infopark","India","Kerala","Kozhikkode","987678","987654321");
+		
+		
