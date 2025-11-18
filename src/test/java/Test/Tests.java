@@ -44,35 +44,4 @@ public class Tests
 		a.accountdetails("74BELqibHi@dGt6","24","July" ,"2020");
 		a.addressinfo("anna","pk","kgf company","cyberpark","infopark","India","Kerala","Kozhikkode","987678","987654321");
 		
-		Login l=new Login(driver);
-		l.login("anuq@gmail.com", "74BELqibHi@dGt6");
-		l.linkcount();
-		l.InUnamepass("invaliduser@gmail.com","74BELqibHi@dGt6");
-		l.UnameInpass("anna","invalidpassword");
 		
-		
-		Contactus c=new Contactus(driver);
-		c.contact("Anu", "anuq@gmail.com", "resume", "hi hope you fine");
-		c.allert();
-		
-		Screenshot sr=new Screenshot(driver);
-		sr.scr();
-		
-		Products p=new Products(driver);
-		p.acton("anu", "12", "34", "24","2026");
-		l.login("anuq@gmail.com","74BELqibHi@dGt6");	
-		
-		
-		Delete d=new Delete(driver);
-		d.delt();
-		
-	}	
-	}
-//	@AfterMethod()
-//	public void after()
-//	{
-//		driver.close();
-//	}
-	
-	
-
