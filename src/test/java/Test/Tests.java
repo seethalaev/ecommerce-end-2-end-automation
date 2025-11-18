@@ -54,5 +54,25 @@ public class Tests
 		c.contact("Anu", "anuq@gmail.com", "resume", "hi hope you fine");
 		c.allert();
 		
+		Screenshot sr=new Screenshot(driver);
+		sr.scr();
+		
+		Products p=new Products(driver);
+		p.acton("anu", "12", "34", "24","2026");
+		l.login("anuq@gmail.com","74BELqibHi@dGt6");	
+		
+		
+		Delete d=new Delete(driver);
+		d.delt();
+		
+	}	
+	}
+//	@AfterMethod()
+//	public void after()
+//	{
+//		driver.close();
+//	}
+	
+		
 	
 
