@@ -44,4 +44,8 @@ public class Tests
 		a.accountdetails("74BELqibHi@dGt6","24","July" ,"2020");
 		a.addressinfo("anna","pk","kgf company","cyberpark","infopark","India","Kerala","Kozhikkode","987678","987654321");
 		
+		Login l=new Login(driver);
+		l.login("anuq@gmail.com", "74BELqibHi@dGt6");
+		l.linkcount();
+		l.InUnamepass("invaliduser@gmail.com","74BELqibHi@dGt6");
 		
