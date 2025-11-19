@@ -62,7 +62,8 @@ public class Tests
 		l.login("anuq@gmail.com","74BELqibHi@dGt6");	
 		
 		
-		
+		Delete d=new Delete(driver);
+		d.delt();
 		
 	}	
 	}
