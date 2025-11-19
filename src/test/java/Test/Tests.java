@@ -24,7 +24,7 @@ import Base.accountInfo;
 
 public class Tests 
 {
-	
+	WebDriver driver;
 	
 	@BeforeMethod()
 	public void before()
