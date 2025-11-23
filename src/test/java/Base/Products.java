@@ -31,7 +31,7 @@ public class Products
 	By payorder=By.xpath("//*[@id=\"submit\"]");
 	By ordeplace=By.xpath("//*[@id=\"form\"]/div/div/div/h2/b");
 	By down=By.xpath("//*[@id=\"form\"]/div/div/div/a");
-	By con=By.xpath("//*[@id=\"form\"]/div/div/div/div/a");
+	
 	
 	public Products(WebDriver driver)
 	{
