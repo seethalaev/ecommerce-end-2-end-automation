@@ -35,6 +35,7 @@ public class Products
 	
 	public Products(WebDriver driver)
 	{
+		this.driver=driver;	
 	}
 	public void acton(String name,String cardno,String cvno,String expir,String expyear)
 	{
