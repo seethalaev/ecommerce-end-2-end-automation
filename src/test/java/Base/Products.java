@@ -24,7 +24,7 @@ public class Products
 	By Procheck=By.xpath("//*[@id=\"do_action\"]/div[1]/div/div/a");
 	By orderplace=By.xpath("//*[@id=\"cart_items\"]/div/div[7]/a");
 	By namecard=By.xpath("//*[@id=\"payment-form\"]/div[1]/div/input");
-	By card=By.xpath("//*[@id=\"payment-form\"]/div[2]/div/input");
+	
 	By cv=By.xpath("//*[@id=\"payment-form\"]/div[3]/div[1]/input");
 	By expiry=By.xpath("//*[@id=\"payment-form\"]/div[3]/div[2]/input");
 	By expiryyear=By.xpath("//*[@id=\"payment-form\"]/div[3]/div[3]/input");
