@@ -19,7 +19,7 @@ public class Products
 	By itemdeselect=By.xpath("//*[@id=\"product-2\"]/td[6]/a/i");
 	By procheckout=By.xpath("//*[@id=\"do_action\"]/div[1]/div/div/a");
 	By concart=By.xpath("//*[@id=\"checkoutModal\"]/div/div/div[3]/button");
-	
+	By login=By.xpath("//*[@id=\"checkoutModal\"]/div/div/div[2]/p[2]/a/u");
 	By cart=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[3]/a");
 	By Procheck=By.xpath("//*[@id=\"do_action\"]/div[1]/div/div/a");
 	By orderplace=By.xpath("//*[@id=\"cart_items\"]/div/div[7]/a");
