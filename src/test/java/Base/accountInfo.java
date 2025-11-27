@@ -32,7 +32,6 @@ public class accountInfo
     By country=By.xpath("//*[@id=\"country\"]");
     By state=By.xpath("//*[@id=\"state\"]");
     By city=By.xpath("//*[@id=\"city\"]");
-    By zip=By.xpath("//*[@id=\"zipcode\"]");
     By mobile=By.xpath("//*[@id=\"mobile_number\"]");
     By login=By.xpath("//*[@id=\"form\"]/div/div/div/div[1]/form/button");
 	By conti=By.xpath("//*[@id=\"form\"]/div/div/div/div/a");
