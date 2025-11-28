@@ -25,6 +25,7 @@ public class accountInfo
 	By newsletter=By.xpath("//*[@id=\"newsletter\"]");
 	
 	By fname=By.xpath("//*[@id=\"first_name\"]");
+    By lname=By.xpath("//*[@id=\"last_name\"]");
     By cmpny=By.xpath("//*[@id=\"company\"]");
     By adrs=By.xpath("//*[@id=\"address1\"]");
     By adrs2=By.xpath("//*[@id=\"address2\"]");
