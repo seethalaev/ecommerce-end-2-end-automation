@@ -28,7 +28,7 @@ public class accountInfo
     By lname=By.xpath("//*[@id=\"last_name\"]");
     By cmpny=By.xpath("//*[@id=\"company\"]");
     By adrs=By.xpath("//*[@id=\"address1\"]");
-    By adrs2=By.xpath("//*[@id=\"address2\"]");
+   
     By country=By.xpath("//*[@id=\"country\"]");
     By state=By.xpath("//*[@id=\"state\"]");
     By city=By.xpath("//*[@id=\"city\"]");
