@@ -30,6 +30,7 @@ public class accountInfo
     By adrs=By.xpath("//*[@id=\"address1\"]");
     By adrs2=By.xpath("//*[@id=\"address2\"]");
     By country=By.xpath("//*[@id=\"country\"]");
+    By state=By.xpath("//*[@id=\"state\"]");
     By city=By.xpath("//*[@id=\"city\"]");
     By zip=By.xpath("//*[@id=\"zipcode\"]");
     By mobile=By.xpath("//*[@id=\"mobile_number\"]");
