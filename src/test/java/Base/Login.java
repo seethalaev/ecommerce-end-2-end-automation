@@ -21,7 +21,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		WebDriverWait wait;
 		By email=By.xpath("/html/body/section/div/div/div[1]/div/form/input[2]");
 		By pas=By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/input[3]");
-		By login=By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/button");
 	    By logout=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
 
 	
