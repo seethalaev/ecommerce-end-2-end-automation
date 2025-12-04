@@ -20,6 +20,7 @@ public class Contactus {
 	By sub=By.xpath("//*[@id=\"contact-us-form\"]/div[3]/input");
 	By message=By.xpath("//*[@id=\"message\"]");
 	By choosefile=By.name("upload_file");
+	By subit=By.name("submit");
 	By msg=By.xpath("//*[@id=\"contact-page\"]/div[2]/div[1]/div/div[2]");
 	public Contactus(WebDriver driver)
 	{
