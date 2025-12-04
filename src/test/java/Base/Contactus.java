@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Contactus {
 
-	
+	WebDriver driver;
 	By contactus=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[8]/a");
 	By name=By.xpath("//*[@id=\"contact-us-form\"]/div[1]/input");
 	By email=By.xpath("//*[@id=\"contact-us-form\"]/div[2]/input");
