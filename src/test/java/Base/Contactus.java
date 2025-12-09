@@ -17,6 +17,7 @@ public class Contactus {
 	By contactus=By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[8]/a");
 	By name=By.xpath("//*[@id=\"contact-us-form\"]/div[1]/input");
 	By email=By.xpath("//*[@id=\"contact-us-form\"]/div[2]/input");
+	By sub=By.xpath("//*[@id=\"contact-us-form\"]/div[3]/input");
 	By message=By.xpath("//*[@id=\"message\"]");
 	By choosefile=By.name("upload_file");
 	By subit=By.name("submit");
