@@ -17,7 +17,7 @@ public class accountInfo
 	WebDriver driver;
 	
 	By title=By.xpath("//*[@id=\"id_gender2\"]");
-	By pswd=By.xpath("//*[@id=\"password\"]");
+	
 	
 	By day=By.xpath("//*[@id=\"days\"]");
 	By month=By.xpath("//*[@id=\"months\"]");
